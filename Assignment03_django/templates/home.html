@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+  <div class="main d-flex flex-wrap justify-content-around align-items-center m-4">
+   
+    <div class="mainimg m-4 ">
+        <img class="images  mb-5 " src="{% static 'rest1.png' %}" alt="home-image" />
+    </div>
+
+    <div class="para p-3 mb-5">
+      <p class="text-dark"> {{ paragraph | truncatewords:25 }}</p>
+  </div>
+  </div>
+
+{% endblock %}
+
